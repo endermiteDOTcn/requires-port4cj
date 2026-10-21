@@ -1,0 +1,9 @@
+[package]
+  cjc-version = "1.0.5"
+  name = "requires_port_example"
+  description = "Basic usage of requires_port"
+  version = "1.0.0"
+  output-type = "executable"
+
+[dependencies]
+  requires_port = { path = "../.." }

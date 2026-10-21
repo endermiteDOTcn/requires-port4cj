@@ -1,0 +1,4 @@
+*.cj text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.cjs text eol=lf
