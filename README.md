@@ -39,9 +39,13 @@ requires-port4cj/
 
 ## 环境要求
 
-- 仓颉 SDK **1.0.5**，`cjc` 和 `cjpm` 可用，已加载 SDK 环境。
-- 验证环境：Windows x86_64、Cangjie 1.0.5。
+- 最低仓颉 SDK **1.0.5**，`cjc` 和 `cjpm` 可用，已加载 SDK 环境。
+- 验证环境：Windows x86_64、Cangjie 1.0.5 和 1.2.1。
 - 上游行为对照脚本使用 Node.js。
+
+2026-11-14 使用 SDK 1.2.1、Node.js 22.20.0，清理构建缓存后执行现有 release 流程：
+`cjpm build`、`cjpm test`（9/9）、独立示例及上游对照（11,970/11,970）均通过。
+清单中的 `cjc-version = "1.0.5"` 继续作为最低 SDK 要求。
 
 ## 编译与测试
 
