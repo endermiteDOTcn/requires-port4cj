@@ -39,27 +39,52 @@ requires-port4cj/
 
 ## 环境要求
 
-- 仓颉 SDK **1.0.5**，`cjc` 和 `cjpm` 可用，已加载 SDK 环境。
-- 验证环境：Windows x86_64、Cangjie 1.0.5。
+- 最低仓颉 SDK **1.0.5**，`cjc` 和 `cjpm` 可用，已加载 SDK 环境。
+- 验证平台：Windows x86_64、Linux x86_64（Ubuntu 26.04.1 / WSL2）。
 - 上游行为对照脚本使用 Node.js。
+
+2026-11-14 使用各 SDK 的独立构建目录及 Node.js 22.20.0，完成以下版本回归：
+
+| 仓颉 SDK | Windows x86_64 | Linux x86_64 / WSL2 |
+| --- | --- | --- |
+| 1.0.5 | 通过 | 通过 |
+| 1.1.0 | 通过 | 通过 |
+| 1.1.3 | 通过 | 通过 |
+| 1.1.5 | 通过 | 通过 |
+| 1.2.0 | 通过 | 通过 |
+| 1.2.1 | 通过 | 通过 |
+
+每个环境均通过 release/debug 静态库构建、原有 **9/9 单元测试**、`examples/basic`
+及同时引入本库和 `url_parse` 的消费端验证；单测无失败、错误或跳过。
+release 模式的上游对照使用脚本原有固定种子 `20261021`，每个环境完成
+**11,970 次比较，零差异**。debug 模式未运行上游差分。
+
+验证对应本仓源码基线 `5f3cf14a7a4e440e2e5b2009c2059eefb182a067`；
+清单中的 `cjc-version = "1.0.5"` 继续作为最低 SDK 要求。
+结论限于表中平台从源码重新构建后的兼容性，未验证跨 SDK 二进制混用。
 
 ## 编译与测试
 
-在本仓库根目录执行：
+加载待测 SDK 环境后，在本仓库根目录执行。切换 SDK 时也需清理独立示例的构建缓存：
 
 ```shell
+cjpm clean
 cjpm build
 cjpm test
+cjpm build -g
+cjpm test -g
 ```
 
 运行独立示例：
 
 ```shell
 cd examples/basic
+cjpm clean
 cjpm run
+cjpm run -g
 ```
 
-输出：
+两个模式输出相同：
 
 ```text
 true
