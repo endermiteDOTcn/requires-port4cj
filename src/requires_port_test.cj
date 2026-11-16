@@ -11,7 +11,7 @@ class RequiresPortTest {
     func defaultPortsAndProtocolSuffixes(): Unit {
         // Covers all six protocol groups and all input forms in upstream test.js.
         for ((protocol, port) in [("http", 80), ("ws", 80), ("https", 443), ("wss", 443), ("ftp", 21), ("gopher", 70)]) {
-            for (suffix in ["", ":", "://", "://www.google.com"]) {
+            for (suffix in ["", ":", "://", "://localhost"]) {
                 @Expect(required(port, protocol + suffix), false)
                 @Expect(required(port.toString(), protocol + suffix), false)
                 @Expect(required(8080, protocol + suffix), true)

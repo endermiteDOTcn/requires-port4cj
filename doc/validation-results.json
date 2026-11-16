@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "repository": "requires-port4cj",
+  "generatedDate": "2026-11-16",
+  "status": "passed-for-recorded-scope",
+  "currentBaseCommits": {
+    "requires-port4cj": "b60e58e06f2d2de486a0d1b9666ae4fd7e72b584",
+    "url-parse4cj": "532370817fb20873685f3e89b209a83e1d459bcc"
+  },
+  "currentRuntimeSourceSha256": {
+    "cjpm.toml": "785039d1cab2b45611cd2fc8606ebc2e1c0c16d8961fefa6bbf1bd1109fabd52",
+    "examples/basic/cjpm.toml": "cdc184ae2809ada4f7359c92a7c8f224373f15415f8cfeff753b138cebc6e411",
+    "examples/basic/src/main.cj": "d608462e148329505b3866fb14f400f0af43749308e8eb2b7071483dc8a0658a",
+    "requires-port/.github/workflows/ci.yml": "3b460dc1ab2160f073744cfbda4d0601946ed30b72c1deae7b3accd158a31f08",
+    "requires-port/.gitignore": "874b86baa05797ef025bca934338a2418383b5eb3d4c4c0fa5e31d39c4339c30",
+    "requires-port/.npmignore": "1f1bd1bd595ec0df46ca8862fbda92e6e02196ed7028c5480d1d5643f62d7591",
+    "requires-port/.npmrc": "8ca46f4a9b6f2c70f6f24cb886a542c36bcb6972aa770aae035bd8df5407d3c9",
+    "requires-port/LICENSE": "65bbcbb9dc72a625d035a97ddbfb210c8697340d586f495a4f95ce58fefdb8a3",
+    "requires-port/README.md": "35d3f4f771a8d3d93fcadb41cef943fa979d2d0ebbb20600425d551de9df9724",
+    "requires-port/index.js": "09b01c6a5d1f128e9c78d70ac1b6ea883bab4587c70e8d56baacb8822985f643",
+    "requires-port/package.json": "75a285b3a0d23d77588b905f62da0db5ecb0a0bc31963f7e66efce80d011d462",
+    "requires-port/test.js": "d25c7aa4b3b85a7109723e5200dbac94963ad37b44173caebda1d68ee92635ce",
+    "scripts/check_upstream.cjs": "9618b8417df1d8cdd866db4d5e0aaf34e9c2cf8caf664c24ecd094d2f404b785",
+    "src/requires_port.cj": "212a44cd763d6ab3cc815ea76c084de252e3a15b0911f04d2e07d695b77904d7",
+    "src/requires_port_test.cj": "669dece120faf6b56be398446dee8c21de17de41785f57035ba2250a84aec6c6"
+  },
+  "historicalMatrix": {
+    "executionDate": "2026-11-14",
+    "recheckedDate": "2026-11-16",
+    "baseCommits": {
+      "requires-port4cj": "5f3cf14a7a4e440e2e5b2009c2059eefb182a067",
+      "url-parse4cj": "8181a1589158bbe8a8a45e12c5acf6f324deaf93"
+    },
+    "versions": [
+      "1.0.5",
+      "1.1.0",
+      "1.1.3",
+      "1.1.5",
+      "1.2.0",
+      "1.2.1"
+    ],
+    "environments": 12,
+    "matrix": [
+      {
+        "platform": "windows",
+        "sdk": "1.0.5",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.0.5 (cjnative)\nTarget: x86_64-w64-mingw32",
+        "baselineStages": 21,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "windows",
+        "sdk": "1.1.0",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.1.0 (cjnative)\nTarget: x86_64-w64-mingw32",
+        "baselineStages": 21,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "windows",
+        "sdk": "1.1.3",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.1.3 (cjnative)\nTarget: x86_64-w64-mingw32",
+        "baselineStages": 21,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "windows",
+        "sdk": "1.1.5",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.1.5 (cjnative)\nTarget: x86_64-w64-mingw32",
+        "baselineStages": 25,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "windows",
+        "sdk": "1.2.0",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.2.0 (cjnative)\nTarget: x86_64-w64-mingw32",
+        "baselineStages": 25,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "windows",
+        "sdk": "1.2.1",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.2.1 (cjnative)\nTarget: x86_64-w64-mingw32",
+        "baselineStages": 21,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "linux",
+        "sdk": "1.0.5",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.0.5 (cjnative)\nTarget: x86_64-unknown-linux-gnu",
+        "baselineStages": 22,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "linux",
+        "sdk": "1.1.0",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.1.0 (cjnative)\nTarget: x86_64-unknown-linux-gnu",
+        "baselineStages": 22,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "linux",
+        "sdk": "1.1.3",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.1.3 (cjnative)\nTarget: x86_64-unknown-linux-gnu",
+        "baselineStages": 22,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "linux",
+        "sdk": "1.1.5",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.1.5 (cjnative)\nTarget: x86_64-unknown-linux-gnu",
+        "baselineStages": 22,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "linux",
+        "sdk": "1.2.0",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.2.0 (cjnative)\nTarget: x86_64-unknown-linux-gnu",
+        "baselineStages": 22,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      },
+      {
+        "platform": "linux",
+        "sdk": "1.2.1",
+        "status": "passed",
+        "compiler": "Cangjie Compiler: 1.2.1 (cjnative)\nTarget: x86_64-unknown-linux-gnu",
+        "baselineStages": 22,
+        "expandedStages": 23,
+        "finalSourceStages": 3,
+        "releaseUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "debugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "releaseSeedRuns": 8,
+        "portComparisonExecutions": 95760,
+        "urlComparisonExecutions": 41920,
+        "mismatches": 0,
+        "buildExamplesAndDualConsumerPassed": true
+      }
+    ],
+    "recordedCommandStages": 578,
+    "commandStageBreakdown": {
+      "baseline": 266,
+      "expanded": 276,
+      "finalAnnotatedSource": 36
+    },
+    "helpOnlyCommandsIncluded": 6,
+    "comparisonExecutionsThisRepository": 1149120,
+    "comparisonExecutionsBothLibraries": 1652160,
+    "mismatches": 0,
+    "uniqueInputCountClaimed": false,
+    "originalResultSha256": "f7399bed9bd5cc35010952e7d887de00d0d3a7dc5d590172c1170da4c542fdbb"
+  },
+  "historicalSourceReuse": {
+    "comparedRuntimeInputs": 46,
+    "byteIdenticalInputs": 44,
+    "changedFiles": [
+      "requires-port4cj/scripts/check_upstream.cjs",
+      "url-parse4cj/scripts/check_upstream.cjs"
+    ],
+    "changeScope": "Only the two decimal seed entry validators differ; RNG, generated cases, replay code and oracle are unchanged.",
+    "allCurrentEightSeedCorporaMatchHistoricalMatrix": true
+  },
+  "seedContract": {
+    "defaultWhenUnset": 20261021,
+    "format": "non-empty ASCII decimal digits",
+    "minimum": 0,
+    "maximum": 4294967295,
+    "leadingZerosAccepted": true,
+    "seeds": [
+      0,
+      1,
+      42,
+      24301,
+      20261021,
+      20261114,
+      2147483648,
+      4294967295
+    ],
+    "corpusSha256": {
+      "0": {
+        "portGeneratedSource": "627cc908f025cdf89c9e0d2fc3502aba83273f3a3190c21384b3da1ffc7fef68",
+        "urlInput": "cc6ae33fbdfdab252d54186a29110eb15c00ac9eac2e35a126b42e6e0549d985"
+      },
+      "1": {
+        "portGeneratedSource": "32a38fe780c519d150992f5a32e329b8388c06abff9772a99ce7d3d8cd072a50",
+        "urlInput": "aa4c68e32c8505458c2d260b17ef2388232dabd16148702dac4fe898013339ba"
+      },
+      "42": {
+        "portGeneratedSource": "a6cb471512fe9bde7a642afbe300b4225bafad1b30183cda90aace0c875a3a11",
+        "urlInput": "91b03be0890b0d19536caf59716e32568b58351f9f013578ebf75ece619107ba"
+      },
+      "24301": {
+        "portGeneratedSource": "57b76d54f4c82e06223dcb11cd958a80b4973502db428f00acc8f6f23061fe45",
+        "urlInput": "027eb22418edcd7043a996c0b005febca7f555db8ee9d6dd78cf6111116c37a0"
+      },
+      "20261021": {
+        "portGeneratedSource": "2d12730dae074a396327a23482c21081a2e1048539971dbeded7cef734550d6b",
+        "urlInput": "2963dd259a44bdcc84b45c55ad78e1cdd2c1968016aaceb54a3c496845184d95"
+      },
+      "20261114": {
+        "portGeneratedSource": "5242786a30c35623eedb7c441a3b71744af072a37adf42a5ba500127afb2588c",
+        "urlInput": "5c4cbed34ee03e55339aa24edb9a4b09f745bf84710b5bc4f4804a96d88a744c"
+      },
+      "2147483648": {
+        "portGeneratedSource": "a04c7ba05226f5481624788040750aef4de1e1e456f4e301e02accff9125d6c6",
+        "urlInput": "ac942680041a4d43be2acf58eb5595f6873ea53be315a77f30762fbc068f03f5"
+      },
+      "4294967295": {
+        "portGeneratedSource": "d2d9009f7ff150d9206e777b3d680f92bf8c0beeeca0d9c1c52219d428a0f4bc",
+        "urlInput": "540b4c7e6d36ff66e88db1f1879c665326cba8dd734e930bf853724b2ba1d1c5"
+      }
+    },
+    "urlHashMeaning": "actual UTF-8 stdin including trailing newline",
+    "portHashMeaning": "generated Cangjie source containing inputs and oracle expectations"
+  },
+  "currentRevalidation": {
+    "executionDate": "2026-11-16",
+    "node": "22.20.0",
+    "environments": [
+      {
+        "platform": "Windows x86_64",
+        "sdk": "1.0.5",
+        "status": "passed",
+        "successfulCommandSteps": 38,
+        "releaseAndDebugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "buildsExamplesAndDualConsumerPassed": true,
+        "explicitSeedRuns": 8,
+        "invalidSeedRejections": 28,
+        "defaultMatchesExplicit20261021": true,
+        "leadingZero00042Matches42": "not repeated on this SDK",
+        "mismatches": 0
+      },
+      {
+        "platform": "Windows x86_64",
+        "sdk": "1.2.1",
+        "status": "passed",
+        "successfulCommandSteps": 40,
+        "releaseAndDebugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "buildsExamplesAndDualConsumerPassed": true,
+        "explicitSeedRuns": 8,
+        "invalidSeedRejections": 28,
+        "defaultMatchesExplicit20261021": true,
+        "leadingZero00042Matches42": true,
+        "mismatches": 0
+      },
+      {
+        "platform": "Linux x86_64 / WSL2",
+        "sdk": "1.0.5",
+        "status": "passed",
+        "successfulCommandSteps": 38,
+        "releaseAndDebugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "buildsExamplesAndDualConsumerPassed": true,
+        "explicitSeedRuns": 8,
+        "invalidSeedRejections": 28,
+        "defaultMatchesExplicit20261021": true,
+        "mismatches": 0
+      },
+      {
+        "platform": "Linux x86_64 / WSL2",
+        "sdk": "1.2.1",
+        "status": "passed",
+        "successfulCommandSteps": 38,
+        "releaseAndDebugUnitTests": {
+          "requires_port": 9,
+          "url_parse": 26
+        },
+        "buildsExamplesAndDualConsumerPassed": true,
+        "explicitSeedRuns": 8,
+        "invalidSeedRejections": 28,
+        "defaultMatchesExplicit20261021": true,
+        "mismatches": 0
+      }
+    ],
+    "successfulCommandSteps": 154,
+    "expectedInvalidSeedRejections": 112,
+    "eightSeedComparisonExecutionsThisRepository": 383040,
+    "eightSeedComparisonExecutionsBothLibraries": 550720,
+    "mismatches": 0,
+    "scope": "Native builds/tests/examples/consumer in release and debug; upstream differential in release only."
+  },
+  "coverage": {
+    "executionDate": "2026-11-16",
+    "sdk": "1.2.1",
+    "platform": "Windows x86_64",
+    "scope": "Native unit-test executable production lines; tests and dependencies excluded; not branch coverage.",
+    "hit": 68,
+    "total": 68,
+    "files": [
+      {
+        "path": "src/requires_port.cj",
+        "hit": 68,
+        "total": 68
+      }
+    ],
+    "percent": 100.0
+  },
+  "packagingPreflight": {
+    "executionDate": "2026-11-16",
+    "sdk": "1.2.1",
+    "urlLintMandatory": 0,
+    "urlLintSuggestions": 43,
+    "urlDefaultBundle": "blocked-local-path-dependency",
+    "urlBundleExitCode": 1,
+    "urlBundleDiagnostic": "dependency 'requires_port' from field 'dependencies' should be in format of centray repository while bundling",
+    "portFinalBundleReceipt": "Recorded separately after final documentation is frozen; see the PR validation summary."
+  },
+  "limitations": [
+    "Historical six-version matrix is retained with its original execution date, not claimed as rerun today.",
+    "Comparison counts are executions with repeated fixed cases, not unique inputs.",
+    "No debug eight-seed differential, macOS, ARM, HarmonyOS/OpenHarmony device, or cross-SDK binary mixing validation.",
+    "No central repository publication or official acceptance is claimed."
+  ]
+}
