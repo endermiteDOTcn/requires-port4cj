@@ -26,7 +26,12 @@ const whitespace = ['\t', '\n', '\v', '\f', '\r', ' ', '\u00a0', '\u1680',
 for (const space of whitespace) strings.push(space, space + '80' + space, space + '81' + space);
 
 // Seeded generated decimal inputs supplement the explicit regression cases.
-let seed = 20261021;
+const seedText = process.env.UPSTREAM_SEED ?? '20261021';
+const initialSeed = Number(seedText);
+if (!/^\d+$/.test(seedText) || !Number.isInteger(initialSeed) || initialSeed < 0 || initialSeed > 0xffffffff) {
+  throw new Error('UPSTREAM_SEED must contain decimal digits for an integer between 0 and 4294967295');
+}
+let seed = initialSeed;
 for (let i = 0; i < 160; i++) {
   seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
   const n = seed % 100000;
@@ -83,4 +88,5 @@ ${numberCases.join(',\n')}
     println("Upstream compatibility: \${(strings.size + numbers.size) * protocols.size} cases passed")
 }
 `, 'utf8');
+console.log(`Upstream seed: ${initialSeed}`);
 execFileSync('cjpm', ['run'], { cwd: generated, stdio: 'inherit' });

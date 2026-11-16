@@ -14,7 +14,7 @@
    同样参考 npm 函数库，公开 README 展示了 `src/`、`doc/feature_api.md`、
    `cjpm.toml`、README、CHANGELOG 和 LICENSE 的布局，以及直接导入函数的用法。
 3. [仓颉包和模块管理](https://cj-docs.gitcode.com/zh/1.2.0/dev-guide/source_zh_cn/package/package_module_management.html)：
-   用于了解目录、包和模块的对应关系。本项目使用仓颉 1.0.5 SDK 构建。
+   用于了解目录、包和模块的对应关系。本项目的实测版本见 [兼容性验证报告](validation.md)。
 
 ## 目录职责
 
@@ -62,6 +62,14 @@
    Unicode 空白、不同进制、NaN、无穷、小数和越界数字的回归测试。
 3. 在 `examples/basic` 下执行 `cjpm run`：验证消费端通过公开接口使用库。
 4. `node scripts/check_upstream.cjs`：用上游函数生成期望值，对照 11,970 个输入组合的仓颉结果。
+
+## SDK 兼容性验证
+
+2026-11-14 已验证 SDK 1.0.5、1.1.0、1.1.3、1.1.5、1.2.0、1.2.1，
+覆盖 Windows x86_64 与 Linux x86_64（Ubuntu / WSL2）的 release/debug 构建、
+原生单测、独立示例和消费端集成。每个环境还完成了 8 个种子的 release 上游对照，零差异。
+完整的版本矩阵、覆盖率、最终改动、复现命令和官方提交前事项见
+[兼容性验证报告](validation.md)与[机器结果](validation-results.json)。
 
 ## 许可证
 
